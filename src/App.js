@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import AboutMe from './components/aboutMe';
 import Resume from './components/Resume';
-import Portfolio from './components/Porfolio';
+import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
