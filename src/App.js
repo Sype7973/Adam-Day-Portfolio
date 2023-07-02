@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import { ChakraProvider } from '@chakra-ui/react';
 
 import Navbar from './components/Navbar';
-import AboutMe from './components/AboutMe';
 import Resume from './components/Resume';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
