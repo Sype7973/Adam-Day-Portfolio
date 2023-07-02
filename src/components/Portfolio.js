@@ -1,16 +1,22 @@
 import React from 'react';
-import { Box, Flex, Grid, GridItem, Image, Link } from '@chakra-ui/react';
+import { Box, Grid, GridItem, Image, Link } from '@chakra-ui/react';
 
 export default function Portfolio() {
   const projects = [
     {
         // placedholder code for design, adding projects after
-      title: 'Project 1',
-      imageSrc: 'https://example.com/project1.jpg',
+      title: 'Vibe',
+      imageSrc: '../public/images/Vibe.png',
       deployedLink: 'https://example.com/project1',
-      githubLink: 'https://github.com/user/project1',
+      githubLink: 'https://github.com/Gator2-0/Vibe',
     },
     // Add more projects here...
+    {
+      title: 'PawesomeCare',
+      imageSrc: '../public/images/PawesomeCare.png',
+      deployedLink: 'https://example.com/project2',
+      githubLink: 'https://github.com/Sype7973/PawsomeCare'
+    }
   ];
 
   return (
