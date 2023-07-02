@@ -1,5 +1,6 @@
 import react from 'react';
 
+// email form with message
 export default function Contact() {
 
     return (

@@ -6,4 +6,6 @@ export default function Portfolio() {
             <h1>Portfolio</h1>
         </div>
     )
+    // displays cards of projects that are links to the deployed app and the github repo
+    
 }

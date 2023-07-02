@@ -8,3 +8,5 @@ export default function Resume() {
         </div>
     )
 }
+
+// link to download resume
