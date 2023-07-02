@@ -4,6 +4,7 @@ import { Box, Flex, Grid, GridItem, Image, Link } from '@chakra-ui/react';
 export default function Portfolio() {
   const projects = [
     {
+        // placedholder code for design, adding projects after
       title: 'Project 1',
       imageSrc: 'https://example.com/project1.jpg',
       deployedLink: 'https://example.com/project1',
