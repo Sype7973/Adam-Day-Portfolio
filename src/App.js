@@ -9,6 +9,7 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
+
 function App() {
   const [currentPath, setCurrentPath] = useState(window.location.pathname);
 
