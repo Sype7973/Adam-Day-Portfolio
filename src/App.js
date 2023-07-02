@@ -1,33 +1,41 @@
 // This is the main file for the portfolio website. It is the first file that is run when the website is loaded.
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { ChakraProvider } from '@chakra-ui/react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-// import the routes
 import Navbar from './components/Navbar';
-import AboutMe from './components/aboutMe';
+import AboutMe from './components/AboutMe';
 import Resume from './components/Resume';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
+  const [currentPath, setCurrentPath] = useState(window.location.pathname);
+
+  useEffect(() => {
+    const handlePathChange = () => {
+      setCurrentPath(window.location.pathname);
+    };
+
+    window.addEventListener('popstate', handlePathChange);
+
+    return () => {
+      window.removeEventListener('popstate', handlePathChange);
+    };
+  }, []);
+
   return (
     <div className="adam-day-portfolio">
       <ChakraProvider>
-        <Router>
-          <Navbar />
+        <Navbar currentPath={currentPath} />
 
-          <Routes>
-            <Route exact path="/" component={AboutMe} />
-            <Route path="/about" component={AboutMe} />
-            <Route path="/resume" component={Resume} />
-            <Route path="/portfolio" component={Portfolio} />
-            <Route path="/contact" component={Contact} />
-        </Routes>
+        {currentPath === '/' && <AboutMe />}
+        {currentPath === '/about' && <AboutMe />}
+        {currentPath === '/resume' && <Resume />}
+        {currentPath === '/portfolio' && <Portfolio />}
+        {currentPath === '/contact' && <Contact />}
 
-          <Footer />
-        </Router>
+        <Footer />
       </ChakraProvider>
     </div>
   );
