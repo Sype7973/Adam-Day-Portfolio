@@ -30,11 +30,11 @@ function App() {
       <ChakraProvider>
         <Navbar currentPath={currentPath} />
 
-        {currentPath === '/' && <AboutMe />}
-        {currentPath === '/about' && <AboutMe />}
-        {currentPath === '/resume' && <Resume />}
-        {currentPath === '/portfolio' && <Portfolio />}
-        {currentPath === '/contact' && <Contact />}
+        {currentPath === '/Sype7973/Adam-Day-Portfolio' && <AboutMe />}
+        {currentPath === '/Sype7973/Adam-Day-Portfolio/about' && <AboutMe />}
+        {currentPath === '/Sype7973/Adam-Day-Portfolio/resume' && <Resume />}
+        {currentPath === '/Sype7973/Adam-Day-Portfolio/portfolio' && <Portfolio />}
+        {currentPath === '/Sype7973/Adam-Day-Portfolio/contact' && <Contact />}
 
         <Footer />
       </ChakraProvider>
