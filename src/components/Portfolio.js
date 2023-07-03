@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Grid, GridItem, Link, Image, Text, Stack } from '@chakra-ui/react';
+import { Box, Grid, GridItem, Link, Image, Text} from '@chakra-ui/react';
 import VibeImage from '../assets/images/Vibe.png';
 import PawesomeCareImage from '../assets/images/pawesomecare.png';
 
@@ -28,10 +28,10 @@ export default function Portfolio() {
       <Grid templateColumns="repeat(auto-fit, minmax(200px, 1fr))" gap={6} mt={8}>
         {projects.map((project, index) => (
           <GridItem key={index}>
-            <Box borderRadius="md" borderWidth="1px" overflow="hidden">
-              <Image src={project.imageSrc} alt={project.title} />
-              <Box p={4}>
-                <Stack spacing={2}>
+            <Link href={project.deployedLink} isExternal>
+              <Box maxW="300px" borderWidth="1px" borderRadius="md" overflow="hidden" boxShadow="md" p={4}>
+                <Image src={project.imageSrc} alt={project.title} />
+                <Box mt={4}>
                   <Text fontWeight="bold" fontSize="lg">
                     {project.title}
                   </Text>
@@ -41,9 +41,9 @@ export default function Portfolio() {
                   <Link href={project.githubLink} isExternal>
                     GitHub Repo
                   </Link>
-                </Stack>
+                </Box>
               </Box>
-            </Box>
+            </Link>
           </GridItem>
         ))}
       </Grid>
