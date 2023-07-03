@@ -1,41 +1,48 @@
 import React from 'react';
-import { Box, Grid, GridItem, Image, Link } from '@chakra-ui/react';
+import { Box, Grid, GridItem, Link, Image, Text, Stack } from '@chakra-ui/react';
+import VibeImage from '../assets/images/Vibe.png';
+import PawesomeCareImage from '../assets/images/pawesomecare.png';
 
 export default function Portfolio() {
   const projects = [
     {
-        // placedholder code for design, adding projects after
       title: 'Vibe',
-      imageSrc: '../public/images/Vibe.png',
+      imageSrc: VibeImage,
       deployedLink: 'https://example.com/project1',
       githubLink: 'https://github.com/Gator2-0/Vibe',
     },
     // Add more projects here...
     {
       title: 'PawesomeCare',
-      imageSrc: '../public/images/PawesomeCare.png',
+      imageSrc: PawesomeCareImage,
       deployedLink: 'https://example.com/project2',
-      githubLink: 'https://github.com/Sype7973/PawsomeCare'
-    }
+      githubLink: 'https://github.com/Sype7973/PawsomeCare',
+    },
   ];
 
   return (
     <Box py={8}>
-      <h1>Portfolio</h1>
+      <Text as="h1" fontSize="2xl" fontWeight="bold" mb={4}>
+        Portfolio
+      </Text>
       <Grid templateColumns="repeat(auto-fit, minmax(200px, 1fr))" gap={6} mt={8}>
         {projects.map((project, index) => (
           <GridItem key={index}>
-            <Link href={project.deployedLink} target="_blank" rel="noopener noreferrer">
+            <Box borderRadius="md" borderWidth="1px" overflow="hidden">
               <Image src={project.imageSrc} alt={project.title} />
-            </Link>
-            <Box mt={2} textAlign="center">
-              <Link href={project.deployedLink} target="_blank" rel="noopener noreferrer">
-                Deployed App
-              </Link>
-              <br />
-              <Link href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                GitHub Repo
-              </Link>
+              <Box p={4}>
+                <Stack spacing={2}>
+                  <Text fontWeight="bold" fontSize="lg">
+                    {project.title}
+                  </Text>
+                  <Link href={project.deployedLink} isExternal>
+                    Deployed App
+                  </Link>
+                  <Link href={project.githubLink} isExternal>
+                    GitHub Repo
+                  </Link>
+                </Stack>
+              </Box>
             </Box>
           </GridItem>
         ))}

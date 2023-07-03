@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Box, Heading, Input, Textarea, Button } from '@chakra-ui/react';
 
 export default function Contact() {
   const [name, setName] = useState('');
@@ -20,40 +21,45 @@ export default function Contact() {
   };
 
   return (
-    <div>
-      <h1>Contact</h1>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input
-            type="text"
-            id="name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            required
-          />
-        </div>
-        <div>
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </div>
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea
-            id="message"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            required
-          />
-        </div>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+    <Box p={4}>
+      <Heading as="h1" mb={4}>
+        Contact
+      </Heading>
+      <Box borderWidth={1} borderRadius="md" p={4} mb={4}>
+        <Heading as="h2" size="md" mb={2}>
+          Name
+        </Heading>
+        <Input
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          required
+        />
+      </Box>
+      <Box borderWidth={1} borderRadius="md" p={4} mb={4}>
+        <Heading as="h2" size="md" mb={2}>
+          Email
+        </Heading>
+        <Input
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+      </Box>
+      <Box borderWidth={1} borderRadius="md" p={4} mb={4}>
+        <Heading as="h2" size="md" mb={2}>
+          Message
+        </Heading>
+        <Textarea
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+          required
+        />
+      </Box>
+      <Button type="submit" onClick={handleSubmit}>
+        Submit
+      </Button>
+    </Box>
   );
 }
