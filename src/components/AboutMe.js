@@ -1,11 +1,19 @@
 import React from 'react';
-import { Box, Center, Card, CardBody, Heading, Stack, Text } from '@chakra-ui/react';
+import { Box, Center, Card, CardBody, Heading, Stack, Image, Text } from '@chakra-ui/react';
+import profilePicture from '../assets/images/profileimage.jpg';
 
 // custom styles variable to place an image in a box above the card
 
 export default function AboutMe() {
   return (
     <Box py={8}>
+      <Image
+        borderRadius='full'
+        boxSize='150px'
+        objectFit={'cover'}
+        src={profilePicture}
+        alt='Dan Abramov'
+      />
       <Center>
         <Box maxW="1000px">
           <Card variant="outline">
@@ -72,5 +80,6 @@ export default function AboutMe() {
         </Box>
       </Center>
     </Box>
+    
   );
 }
