@@ -1,5 +1,7 @@
 import React from 'react';
-import { Box, Center, Card, CardBody, CardFooter, Heading, Stack, Text, Button } from '@chakra-ui/react';
+import { Box, Center, Card, CardBody, Heading, Stack, Text } from '@chakra-ui/react';
+
+// custom styles variable to place an image in a box above the card
 
 export default function AboutMe() {
   return (
@@ -65,12 +67,6 @@ export default function AboutMe() {
                   </li>
                 </ul>
               </CardBody>
-
-              <CardFooter>
-                <Button variant="solid" colorScheme="blue">
-                  Learn More
-                </Button>
-              </CardFooter>
             </Stack>
           </Card>
         </Box>
