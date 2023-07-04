@@ -4,6 +4,8 @@ import VibeImage from '../assets/images/Vibe.png';
 import PawesomeCareImage from '../assets/images/pawesomecare.png';
 import ToDaysTechBlogImage from '../assets/images/Techblogposticon.png';
 
+// create custom styles to do on hover and show the title of the project, aswell as a screenshot of the project
+
 // Add more projects here...
 export default function Portfolio() {
   const projects = [
@@ -39,7 +41,7 @@ export default function Portfolio() {
       githubLink: 'https://github.com/Sype7973/To-Day-s-Tech-Blog',
     },
   ];
-
+  // get rid of deployedLink and githubLink and add link directly into the image on hover
   return (
     <Box py={8}>
       <Text as="h1" fontSize="2xl" fontWeight="bold" mb={4}>
