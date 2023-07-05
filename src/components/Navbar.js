@@ -1,16 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { Flex, Text } from '@chakra-ui/react';
 
 export default function Navbar() {
   const basePath = '';
 
   return (
-    
-    
-    <Flex as="nav" align="center" justify="center" p={4} bg="#c5d5cb">
-      <Flex align="center">
-      </Flex>
+    <Flex
+      as="nav"
+      align="center"
+      justify="center"
+      p={4}
+      bg="black"
+      borderBottom="2px solid white"
+      height="100px"
+    >
       <Flex as="ul" listStyleType="none" ml={8}>
         <NavItem to={basePath + '/'}>Home</NavItem>
         <NavItem to={basePath + '/about'}>About Me</NavItem>
@@ -24,8 +28,18 @@ export default function Navbar() {
 
 function NavItem({ to, children }) {
   return (
-    <Text as="li" mx={2} fontSize="xl" fontWeight="bold">
-      <Link to={to}>{children}</Link>
+    <Text as="li" id = "navbar-links" mx={2} fontSize="xl" fontWeight="bold" border="2px solid white" p={3} borderRadius={20}>
+      <NavLink
+        to={to}
+        exact
+        activeStyle={{
+          fontWeight: 'bold',
+          color: 'white',
+          borderColor: 'white',
+        }}
+      >
+        {children}
+      </NavLink>
     </Text>
   );
 }

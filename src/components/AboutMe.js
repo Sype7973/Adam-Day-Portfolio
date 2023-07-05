@@ -3,23 +3,36 @@ import { Box, Center, Card, CardBody, Heading, Stack, Image, Text } from '@chakr
 import profilePicture from '../assets/images/profileimage.jpg';
 
 // custom styles variable to place an image in a box above the card
+const customStyles = {
+  image: {
+    borderRadius: '50%',
+    border: '2px solid #c5d5cb',
+    margin: '20px auto',
+    float: 'center',
+    width: '250px',
+    height: '250px',
+  },
+  heading: {
+    textAlign: 'center',
+  },
+};
 
 export default function AboutMe() {
   return (
-    <Box py={8}>
-      <Image
+    <Box className ='content-container'   py={8}>
+      <Image id='aboutMe-image' style ={customStyles.image}
         borderRadius='full'
-        boxSize='150px'
+        boxSize='250px'
         objectFit={'cover'}
         src={profilePicture}
         alt='Dan Abramov'
       />
       <Center>
         <Box maxW="1000px">
-          <Card variant="outline">
+          <Card id ='aboutMe-card'variant="outline">
             <Stack>
               <CardBody>
-                <Heading size="md">About Me</Heading>
+                <Heading style = {customStyles.heading} size="md">About Me</Heading>
                 <Text py="2">
                   Hi, my name is Adam. I am 29 years old. I am a gamer, average nerd, and musician, and I enjoy everything tech.
                   My love for new technology stems from my admiration for sci-fi. As a teenager, I avidly read "Do Androids Dream of Electric Sheep"

@@ -21,7 +21,7 @@ export default function Contact() {
   };
 
   return (
-    <Box p={4}>
+    <Box  className ='content-container'p={4}>
       <Heading as="h1" mb={4}>
         Contact
       </Heading>
