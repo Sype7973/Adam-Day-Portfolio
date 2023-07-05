@@ -1,3 +1,4 @@
+// header and navigation bar for the website
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Flex, Text } from '@chakra-ui/react';
