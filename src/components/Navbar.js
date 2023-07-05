@@ -33,7 +33,7 @@ function NavItem({ to, children }) {
       <NavLink
         to={to}
         exact
-        activeClassName="active"
+        activeclassname="active"
       >
         {children}
       </NavLink>

@@ -1,7 +1,10 @@
 import React from 'react';
-import { Box, Card, CardBody, Heading, Stack, Text, Button } from '@chakra-ui/react';
+import { Box, Card, CardBody, Heading, Stack, Text, Button, Link } from '@chakra-ui/react';
 
 export default function Resume() {
+    const resumeLink =
+    'https://drive.google.com/file/d/1m4VKzPAAbNq6-eameEAIx3Uucrfnjxg3/view?usp=sharing'
+
   return (
     <Box h="80vh" display="flex" justifyContent="center" alignItems="center">
       <Box width="1000px">
@@ -49,7 +52,9 @@ export default function Resume() {
               </ul>
             </CardBody>
             <Box display="flex" justifyContent="center" mb= {4}>
+                <Link href={resumeLink} isExternal>
               <Button colorScheme="red">Download Resume</Button>
+                </Link>
             </Box>
           </Stack>
         </Card>
