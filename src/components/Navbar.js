@@ -1,7 +1,7 @@
 // header and navigation bar for the website
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Flex, Text } from '@chakra-ui/react';
+import { Flex, Text, Box } from '@chakra-ui/react';
 
 export default function Navbar() {
   const basePath = '';
@@ -10,13 +10,18 @@ export default function Navbar() {
     <Flex
       as="nav"
       align="center"
-      justify="center"
+      justify="space-between"
       p={4}
       bg="black"
       borderBottom="2px solid white"
       height="100px"
     >
-      <Flex as="ul" listStyleType="none" ml={8}>
+      <Box>
+        <Text as="h1" fontSize="2xl" fontWeight="bold" color="white">
+          Adam Day
+        </Text>
+      </Box>
+      <Flex as="ul" listStyleType="none" mx="auto">
         <NavItem to={basePath + '/'}>Home</NavItem>
         <NavItem to={basePath + '/about'}>About Me</NavItem>
         <NavItem to={basePath + '/resume'}>Resume</NavItem>
@@ -29,12 +34,8 @@ export default function Navbar() {
 
 function NavItem({ to, children }) {
   return (
-    <Text as="li" id = "navbar-links" mx={2} fontSize="xl" fontWeight="bold" border="2px solid white" p={3} borderRadius={20}>
-      <NavLink
-        to={to}
-        exact
-        activeclassname="active"
-      >
+    <Text as="li" mx={2} fontSize="xl" fontWeight="bold" border="2px solid white" p={3} borderRadius={20}>
+      <NavLink to={to} exact activeClassName="active">
         {children}
       </NavLink>
     </Text>
