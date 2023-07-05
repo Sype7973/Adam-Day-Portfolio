@@ -7,6 +7,7 @@ export default function Contact() {
   const [message, setMessage] = useState('');
   const [submitMessage, setSubmitMessage] = useState('');
 
+  // no logic to send any data to the server yet
   const handleSubmit = (e) => {
     e.preventDefault();
 
