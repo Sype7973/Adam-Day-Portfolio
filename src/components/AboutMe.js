@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Center, Card, CardBody, Heading, Stack, Image, Text } from '@chakra-ui/react';
+import { Box, Center, Card, CardBody, Stack, Image, Text } from '@chakra-ui/react';
 import profilePicture from '../assets/images/profileimage.jpg';
 
 // custom styles variable to place an image in a box above the card
@@ -28,11 +28,13 @@ export default function AboutMe() {
         alt='Dan Abramov'
       />
       <Center>
-        <Box maxW="1000px">
+        <Box maxW="1000px" m={4} >
           <Card id ='aboutMe-card'variant="outline">
             <Stack>
-              <CardBody>
-                <Heading style = {customStyles.heading} size="md">About Me</Heading>
+              <CardBody m={4}>
+              <Text as="h1" fontSize="6xl" fontWeight="bold" textAlign="center" mb={4}>
+                About Me
+              </Text>
                 <Text py="2">
                   Hi, my name is Adam. I am 29 years old. I am a gamer, average nerd, and musician, and I enjoy everything tech.
                   My love for new technology stems from my admiration for sci-fi. As a teenager, I avidly read "Do Androids Dream of Electric Sheep"
@@ -46,11 +48,11 @@ export default function AboutMe() {
                 </Text>
                 <Text py="2">
                   While my passion for technology has led me to where I am today, my resume will reveal that I have also gained valuable experience
-                  in various fields. Family is of great importance to me, and growing up with three intelligent siblings has taught me valuable lessons
+                  in various fields including, product support and customer service management, where i built CRM's for my employer. Family is of great importance to me, and growing up with three intelligent siblings has taught me valuable lessons
                   that I continue to apply in my life.
                 </Text>
                 <Text py="2">
-                  I hope you enjoy exploring my portfolio. &#128513;
+                
                 </Text>
                 <Text as="h2" py="2">
                   Some fun facts about me:
@@ -63,7 +65,7 @@ export default function AboutMe() {
                   </li>
                   <li>
                     <Text py="2">
-                      I have a passion for travel and have lived in Belarus for several months. I have also had the opportunity to visit Japan multiple times. &#127833;
+                      I have a passion for travel and have lived in Belarus for several months. I have also had the opportunity to live in Japan for multiple months at a time. &#127833;
                     </Text>
                   </li>
                   <li>
@@ -84,6 +86,9 @@ export default function AboutMe() {
                   <li>
                     <Text py="2">
                       I am a fan of Warhammer, both Fantasy and 40k. Although I'm not a skilled painter, I am captivated by the lore and world-building aspects of the hobby.
+                    </Text>
+                    <Text fontSize ="2xl" py="2">
+                    I hope you enjoy exploring my portfolio. &#128513;
                     </Text>
                   </li>
                 </ul>

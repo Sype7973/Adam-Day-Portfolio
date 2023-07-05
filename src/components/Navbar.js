@@ -32,11 +32,7 @@ function NavItem({ to, children }) {
       <NavLink
         to={to}
         exact
-        activeStyle={{
-          fontWeight: 'bold',
-          color: 'white',
-          borderColor: 'white',
-        }}
+        activeClassName="active"
       >
         {children}
       </NavLink>

@@ -44,4 +44,26 @@
 #navbar-links:hover{
     color: #23d5ab;
 }
+.active {
+    color: #23d5ab;
+  }
 
+#portfolio-projects{
+    background-color: rgba(21, 18, 18, 0.8);
+    backdrop-filter: blur(4px);
+}
+.project-screenshot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+    object-fit: cover;
+  }
+  
+  #portfolio-projects:hover .project-screenshot {
+    opacity: 1;
+  }
