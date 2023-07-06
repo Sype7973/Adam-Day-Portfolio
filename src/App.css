@@ -34,6 +34,7 @@
 #aboutMe-card{
     background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(4px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 #aboutMe-card:hover{

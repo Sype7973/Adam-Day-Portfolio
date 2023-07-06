@@ -53,7 +53,7 @@ export default function Contact() {
         <Textarea value={message} onChange={(e) => setMessage(e.target.value)} required />
       </Box>
       {submitMessage && <p>{submitMessage}</p>}
-      <Button type="submit" onClick={handleSubmit}>
+      <Button mt={10} type="submit" onClick={handleSubmit}>
         Submit
       </Button>
     </Box>
