@@ -28,7 +28,7 @@ useEffect(() => {
     <div className="adam-day-portfolio">
       <ChakraProvider>
         <Header currentPath={currentPath} />
-        {location.pathname === '/Adam-Day-Portfolio' && <Home />}
+        {location.pathname === '/Adam-Day-Portfolio/' && <Home />}
         {location.pathname === '/' && <Home />}
         {location.pathname === '/about' && <AboutMe />}
         {location.pathname === '/resume' && <Resume />}
