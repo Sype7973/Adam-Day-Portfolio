@@ -36,7 +36,7 @@ export default function Navbar() {
 function NavItem({ to, children }) {
   return (
     <Text as="li" mx={2} fontSize="xl" fontWeight="bold" border="2px solid white" p={3} borderRadius={20}>
-      <NavLink to={to} exact activeClassName="active">
+      <NavLink to={to} activeclassname="active">
         {children}
       </NavLink>
     </Text>
