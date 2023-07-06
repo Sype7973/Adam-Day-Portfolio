@@ -17,17 +17,18 @@ export default function Navbar() {
       height="100px"
     >
       <Box>
-        <Text as="h1" fontSize="2xl" fontWeight="bold" color="white">
+        <Text as="h1" fontSize="2xl" fontWeight="bold" color="white" >
           Adam Day
         </Text>
       </Box>
-      <Flex as="ul" listStyleType="none" mx="auto">
+      <Flex as="ul" id='navbar-content' listStyleType="none" mx="auto" justify="center" pr={120} >
         <NavItem to={basePath + '/'}>Home</NavItem>
         <NavItem to={basePath + '/about'}>About Me</NavItem>
         <NavItem to={basePath + '/resume'}>Resume</NavItem>
         <NavItem to={basePath + '/portfolio'}>Portfolio</NavItem>
         <NavItem to={basePath + '/contact'}>Contact</NavItem>
       </Flex>
+      
     </Flex>
   );
 }
