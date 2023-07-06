@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Adam-Day-Portfolio/static/css/main.f6d801bf.css",
+    "main.js": "/Adam-Day-Portfolio/static/js/main.31f988f3.js",
+    "static/media/text-editor.png": "/Adam-Day-Portfolio/static/media/text-editor.15030b7c5102ffe8fad3.png",
+    "static/media/texteditor.png": "/Adam-Day-Portfolio/static/media/texteditor.b3bafa0049e9fb9d0ebb.png",
+    "static/media/Vibe.png": "/Adam-Day-Portfolio/static/media/Vibe.66b2d2a853ad0cacd1c4.png",
+    "static/media/pawesomecare.png": "/Adam-Day-Portfolio/static/media/pawesomecare.b942f4eade28b8de64dd.png",
+    "static/media/Techblogposticon.png": "/Adam-Day-Portfolio/static/media/Techblogposticon.8c35baa4f910547b9ae8.png",
+    "static/media/pawesome-screenshot.png": "/Adam-Day-Portfolio/static/media/pawesome-screenshot.3b930e60673d5d3a4932.png",
+    "static/media/screenshots-main.png": "/Adam-Day-Portfolio/static/media/screenshots-main.9ad45488e5a8fe90492c.png",
+    "static/media/profileimage.jpg": "/Adam-Day-Portfolio/static/media/profileimage.80ac58ecd29213055039.jpg",
+    "static/media/note-taker.png": "/Adam-Day-Portfolio/static/media/note-taker.37d348f6fde4f9735dd3.png",
+    "static/media/techblogpostscreen.PNG": "/Adam-Day-Portfolio/static/media/techblogpostscreen.42531f7a922b41be45e6.PNG",
+    "static/media/note-taker-screencap.PNG": "/Adam-Day-Portfolio/static/media/note-taker-screencap.21d124465b96faee20cf.PNG",
+    "static/media/text-editor-screencap.PNG": "/Adam-Day-Portfolio/static/media/text-editor-screencap.fb86de7082054871de10.PNG",
+    "index.html": "/Adam-Day-Portfolio/index.html",
+    "main.f6d801bf.css.map": "/Adam-Day-Portfolio/static/css/main.f6d801bf.css.map",
+    "main.31f988f3.js.map": "/Adam-Day-Portfolio/static/js/main.31f988f3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f6d801bf.css",
+    "static/js/main.31f988f3.js"
+  ]
+}
