@@ -17,10 +17,7 @@
 
 Once viewed or installed, you can use this project to view my portfolio and contact information by clicking on the links in the navigation bar.
 
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+![Portfolio screencap showing navbar](./src/assets/images/portfolio-screencap.png)
 
 
 🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.

@@ -4,8 +4,9 @@ import { ChakraProvider } from '@chakra-ui/react';
 import { useLocation } from 'react-router-dom';
 import './App.css';
 
+// future development: add darkmode using chakra darkmode component
+
 import Header from './components/Header';
-// import Navbar from './components/Navbar';
 import Resume from './components/Resume';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';

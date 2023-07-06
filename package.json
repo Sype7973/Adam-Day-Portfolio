@@ -2,6 +2,7 @@
   "name": "adam-day-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Sype7973.github.io/Adam-Day-Portfolio",
   "dependencies": {
     "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
