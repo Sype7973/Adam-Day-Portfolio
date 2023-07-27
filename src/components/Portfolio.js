@@ -10,6 +10,9 @@ import noteTaker from '../assets/images/note-taker.png';
 import noteTakerScreenshot from '../assets/images/note-taker-screencap.PNG';
 import textEditor from '../assets/images/texteditor.png';
 import textEditorScreenshot from '../assets/images/text-editor-screencap.PNG';
+import HeyListenScreenshot from '../assets/images/HeyListen.PNG';
+import HeyListen from '../assets/images/Producer.png';
+
 
 
 // custom styles to on hover and show screenshots of projects
@@ -53,6 +56,14 @@ export default function Portfolio() {
       githubLink: 'https://github.com/Sype7973/To-Day-s-Tech-Blog',
       screenshotSrc: ToDaysTechBlogScreenshot,
     },
+
+    {
+      title: 'Hey-Listen',
+      imageSrc: HeyListen,
+      deployedLink: 'https://hey-listen-sound-caafe84374e5.herokuapp.com/',
+      githubLink: 'https://github.com/Sype7973/Hey-Listen',
+      screenshotSrc: HeyListenScreenshot,
+    }
   ];
 
   return (
